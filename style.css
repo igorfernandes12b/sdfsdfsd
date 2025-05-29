@@ -20,6 +20,18 @@ body{
 
 }
 
+body.menu-open::before{
+    content: ;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    color: var(--dark-blue);
+    top: 0;
+    left: 0;
+    
+}
+
+
 .header-mobile{
     display: flex;
     justify-content: space-between;
@@ -31,6 +43,16 @@ body{
 .header-mobile button{
     border: none;
     background: none;
+
+}
+
+.header-mobile nav{
+    position: fixed;
+    background: var(--almost-white);
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 16rem;
 
 }
 

@@ -32,7 +32,7 @@ body.escurecer::before{
 }
 
 
-.header-mobile{
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -40,17 +40,17 @@ body.escurecer::before{
 
 }
 
-.header-mobile button{
+header button{
     border: none;
     background: none;
     width: fit-content;
 }
 
-.header-mobile  nav.abrir{
+.header nav.mobile.abrir{
     right: 0;
 }
 
-.header-mobile nav{
+header nav.mobile{
     position: fixed;
     background: var(--almost-white);
     right: -16rem;
@@ -65,12 +65,12 @@ body.escurecer::before{
     transition: 0.7s;
 }
 
-.header-mobile nav button{
+header nav button{
     align-self: flex-end;
     margin-bottom: 4rem;
 }
 
-.header-mobile nav a{
+header .mobile a{
     text-decoration: none;
     color: var(--dark-blue);
     font-size: 1.125rem;
@@ -183,4 +183,24 @@ line-height: 100%;
     color: var(--gunmetal);
     font-size: 0.9375rem;
     line-height: 1.625rem;   
+}
+
+
+@media(min-width: 1100px){
+    header > button{
+        display: none;
+    }
+
+    header .desktop {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    header .desktop a{
+        font-size: 0.9375rem;
+        line-height: 1.675rem;
+        color: var(--gunmetal);
+        text-decoration: none;
+
+    }
 }

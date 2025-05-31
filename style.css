@@ -255,5 +255,6 @@ main {
 
     .terceira-secao h2:hover {
         color: var(--vermilion);
+        
     }
   }
